@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
 # Specify the paths to the files
-client_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\OFAC_SDN_List_07.11.2024.xlsx'
+client_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\OFAC_SDN_List_07.15.2024.xlsx' # Change date in this line to reflect the most recent update
 alt_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\alt.csv'
 add_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\add.csv'
 sdn_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\sdn.csv'
@@ -81,7 +81,7 @@ clients_df.loc[:1, 'SDN Status'] = ''
 print(clients_df)
 
 # Save the updated clients_df to a temporary Excel file to retain formatting
-temp_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\clients_with_matches_temp.xlsx'
+temp_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\client_match_status.xlsx'
 clients_df.to_excel(temp_file_path, index=False)
 
 # Load the workbook and select the active worksheet
