@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
 # Specify the paths to the files
-client_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\OFAC_SDN_List_09.19.2024.xlsx' # Change date in this line to reflect the most recent update
+client_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\OFAC_SDN_List_09.24.2024.xlsx' # Change date in this line to reflect the most recent update
 alt_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\alt.csv'
 add_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\add.csv'
 sdn_file_path = r'C:\Users\ErikWang\Documents\SDN_Verifier\Files\sdn.csv'
